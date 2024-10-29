@@ -21,5 +21,29 @@
 }
 
 body {
-  background-color: #282445;
 }
+
+/* Layout */
+
+.l-gradient {
+  background: linear-gradient(
+    var(--light-purple),
+    var(--dark-purple, var(--pink))
+  );
+  height: 100dvh;
+  background-size: 400% 400%;
+  animation: bg 24s ease infinite;
+}
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Components */
