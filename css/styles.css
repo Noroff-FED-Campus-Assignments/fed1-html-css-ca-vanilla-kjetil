@@ -4,6 +4,22 @@
 *::before {
   box-sizing: border-box;
 }
+:root {
+  /* Contrast colors */
+  --white: #efe9f4;
+  --black: #25291c;
+
+  /* Primary colors */
+  --dark-purple: #282445;
+  --light-purple: #8f00ff;
+  --pink: #ff00b8;
+
+  /* Secondary colors */
+  --light-green: #2fef80;
+  --dark-green: #23ce6b;
+  --red: #a4031f;
+}
+
 body {
   background-color: #282445;
 }
