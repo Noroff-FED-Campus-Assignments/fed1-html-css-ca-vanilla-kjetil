@@ -1,0 +1,30 @@
+:root {
+  /* Primary colors */
+  --white: #efe9f4;
+  --black: #25291c;
+  --dark-purple: #282445;
+  --light-purple: #8f00ff;
+  --light-green: #2fef80;
+  --dark-green: #23ce6b;
+
+  /* Secondary colors */
+  --pink: #ff00b8;
+  --red: #a4031f;
+
+  /* Text sizes */
+  --text-s: 0.8rem;
+  --text-md: 1rem;
+  --text-l: 1.4rem;
+
+  /* Spacing */
+  --padding-s: 0.6rem;
+  --padding-md: 1rem;
+  --padding-l: 2rem;
+  --padding-uneven: 1rem 2rem;
+  /* Font */
+  --font-family-primary: "Open Sans", sans-serif;
+  --font-family-secondary: Inter, sans-serif;
+  --font-weight-s: 300;
+  --font-weight-md: 400;
+  --font-weight-l: 700;
+}
