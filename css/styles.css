@@ -7,6 +7,8 @@
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,13 +19,13 @@ body {
   font-size: var(--text-md);
 }
 
-/* Layout */
+/* Layout (l-) */
 .l-gradient {
-  background: linear-gradient(
-    var(--light-purple),
-    var(--dark-purple, var(--pink))
+  background: radial-gradient(
+    var(--dark-purple),
+    var(--medium-purple, var(--pink))
   );
-  height: 100dvh;
+  height: 100%;
   background-size: 400% 400%;
   animation: bg 24s ease infinite;
 }
@@ -38,6 +40,46 @@ body {
     background-position: 0% 50%;
   }
 }
+
+.l-header {
+  display: flex;
+  /* opacity: 1; */
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-uneven);
+  background-color: var(--dark-purple);
+  font-weight: var(--font-weight-md);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .l-header {
+    flex-direction: column;
+    gap: var(--padding-s);
+  }
+}
+
+.l-main {
+  display: flex;
+  /* flex: 1 1 0; */
+  flex-wrap: wrap;
+  gap: var(--padding-s);
+  justify-content: center;
+  padding: var(--padding-l);
+  /* overflow-y: scroll; */
+
+  p {
+    font-family: var(--font-family-secondary);
+    margin: 0;
+  }
+}
+
+.l-footer {
+  flex: 1 1 auto;
+  background: var(--light-purple);
+  padding-top: var(--padding-l);
+}
+
 /* Components (c-) */
 
 .c-logo {
@@ -136,3 +178,71 @@ body {
   }
 }
 
+.c-h1 {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-md);
+  font-size: var(--text-xl);
+  width: 100%;
+  line-height: var(--padding-l);
+  padding-left: var(--padding-xs);
+}
+@media (max-width: 600px) {
+  .c-h1 {
+    font-size: var(--text-l);
+    text-align: center;
+  }
+}
+
+/* Cards */
+
+.card-container {
+  background-color: var(--dark-purple);
+  display: flex;
+  color: var(--black);
+  flex-wrap: wrap;
+  gap: var(--padding-s);
+  justify-content: center;
+  padding: var(--padding-s);
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 300px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card-1 {
+  background-color: #f56f4a;
+}
+.card-2 {
+  background-color: #3cd86e;
+}
+.card-3 {
+  background-color: #6d69ff;
+}
+.card-4 {
+  background-color: #58e7da;
+}
+.card-5 {
+  background-color: #ffbf40;
+}
+.card-6 {
+  background-color: #ce75e2;
+}
