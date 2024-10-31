@@ -1,0 +1,74 @@
+@import url("/css/styles.css");
+
+.form-section {
+  background-color: var(--dark-purple);
+  display: flex;
+  color: var(--white);
+  flex-wrap: wrap;
+  gap: var(--padding-s);
+  justify-content: center;
+  padding: var(--padding-s);
+}
+
+.form {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: var(--medium-purple);
+  border-radius: var(--border-radius-s);
+  padding: 4vw 2vh;
+  gap: 1.5vh;
+  max-width: 500px;
+  font-family: var(--font-family-primary);
+}
+select,
+input,
+textarea,
+fieldset {
+  background-color: var(--medium-purple);
+  border-radius: var(--border-radius-s);
+  border: 1px solid var(--dark-purple);
+  color: var(--white);
+  padding: var(--padding-s);
+  font-family: var(--font-family-primary);
+}
+
+input[type="submit"] {
+  background: var(--dark-green);
+  outline: none;
+  /* border: 0px solid transparent; */
+  cursor: pointer;
+  padding: 2vh 1vw;
+  min-height: 45px;
+  margin-top: 5vh;
+  color: var(--black);
+  font-size: var(--text-l);
+}
+.l-input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+textarea {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+label {
+  display: block;
+  padding-top: var(--padding-s);
+  padding-bottom: var(--padding-s);
+}
+
+textarea {
+  background-color: var(--medium-purple);
+  color: var(--white);
+  padding: var(--padding-s);
+  /* max-width: 100%; */
+  line-height: 1.5;
+}
+
+/* .c-checkbox {
+  display: flex;
+} */
