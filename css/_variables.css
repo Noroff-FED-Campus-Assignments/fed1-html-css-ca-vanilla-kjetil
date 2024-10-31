@@ -15,6 +15,7 @@
   --text-s: 0.8rem;
   --text-md: 1rem;
   --text-l: 1.4rem;
+  --text-xl: 2.4rem;
 
   /* Spacing */
   --padding-s: 0.6rem;
@@ -27,4 +28,8 @@
   --font-weight-s: 300;
   --font-weight-md: 400;
   --font-weight-l: 700;
+
+  /* Other */
+  --push-l: 5.625rem;
+  --push-xl: 8rem;
 }

@@ -61,3 +61,78 @@ body {
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-l);
 }
+
+.c-nav a {
+  color: var(--dark-green);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+.c-nav a:hover {
+  color: var(--light-green);
+}
+.c-nav a::after {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .c-nav {
+    flex-direction: column;
+  }
+}
+
+/* Hamburger menu */
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+/* Hamburger icon */
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: var(--dark-green);
+  margin: 5px 0;
+  /* transition: 0.3s; */
+}
+.hamburger span:hover {
+  background-color: var(--light-green);
+}
+
+@media (max-width: 768px) {
+  /* Show the hamburger menu */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide the c-navigation links by default */
+  .c-nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-purple);
+    position: absolute;
+    top: var(--push-l);
+    right: 0;
+    width: 100%;
+  }
+
+  /* Show c-nav when active (JS will toggle this) */
+  .c-nav.active {
+    display: flex;
+    top: var(--push-l);
+  }
+
+  .c-nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .c-nav.active {
+    display: flex;
+    top: var(--push-xl);
+  }
+}
+
