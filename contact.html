@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <title>Gamehub - Contact</title>
   </head>
   <body>
     <header class="l-header">
-      <div class="c-logo"><a href="/index.html">Gamehub</a></div>
+      <div class="c-logo"><a href="index.html">Gamehub</a></div>
       <!-- Hamburger menu -->
       <div class="hamburger" id="hamburger">
         <span></span>
@@ -16,12 +16,56 @@
         <span></span>
       </div>
       <nav class="c-nav" id="nav">
-        <a href="/index.html">Home</a>
-        <a href="/games.html">Games</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
+    <main class="form-section l-gradient">
+
+      <!-- form action and method is removed - submit button leads back to the same page -->
+      <form class="form">
+        <h1 class="c-h1">Contact</h1>
+
+        <div class="l-input-form">
+          <label for="firstName">Name</label>
+          <input type="text" name="firstname" placeholder="e.g. John" />
+
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="example@mail.com" required />
+
+          <label for="topic"
+            >Give us a hint of what the message is about:</label
+          >
+
+          <select name="topic" id="topic">
+            <option value="Empty"></option>
+            <option value="Price">Why are your prices so low?</option>
+            <option value="Problem">I have a problem</option>
+            <option value="Question">I have a question</option>
+          </select>
+
+          <label for="story">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="33"
+            placeholder="Write your message here.."
+          ></textarea>
+
+        <div class="c-checkbox">
+          <!-- <input type="checkbox" name="terms" value="agree" required /> -->
+          <input type="checkbox" name="terms" value="agree" checked="checked" required>
+          <span class="checkmark"></span>
+          <label for="terms">I want to send this form</label>
+        </div>
+
+        <input type="submit" ref="contact.html" value="Submit" />
+      </form>
+    </main>
+
     <script src="js/script.js"></script>
   </body>
 </html>
