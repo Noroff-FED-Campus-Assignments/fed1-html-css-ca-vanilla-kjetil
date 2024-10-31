@@ -2,22 +2,23 @@
   /* Primary colors */
   --white: #efe9f4;
   --black: #25291c;
-  --dark-purple: #282445;
   --light-purple: #8f00ff;
+  --medium-purple: #462a59;
+  --dark-purple: #282445;
   --light-green: #2fef80;
   --dark-green: #23ce6b;
 
   /* Secondary colors */
   --pink: #ff00b8;
-  --red: #a4031f;
 
   /* Text sizes */
   --text-s: 0.8rem;
   --text-md: 1rem;
-  --text-l: 1.4rem;
+  --text-l: 1.6rem;
   --text-xl: 2.4rem;
 
   /* Spacing */
+  --padding-xs: 0.3rem;
   --padding-s: 0.6rem;
   --padding-md: 1rem;
   --padding-l: 2rem;
@@ -32,4 +33,5 @@
   /* Other */
   --push-l: 5.625rem;
   --push-xl: 8rem;
+  --border-radius-s: 5px;
 }
