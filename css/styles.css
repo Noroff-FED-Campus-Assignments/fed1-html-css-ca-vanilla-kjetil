@@ -38,5 +38,26 @@ body {
     background-position: 0% 50%;
   }
 }
+/* Components (c-) */
 
-/* Components */
+.c-logo {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 48px;
+}
+.c-logo a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.c-logo a:hover {
+  color: var(--light-green);
+}
+
+.c-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-l);
+}
