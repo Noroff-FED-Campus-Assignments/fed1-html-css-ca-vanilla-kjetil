@@ -43,7 +43,6 @@ body {
 
 .l-header {
   display: flex;
-  /* opacity: 1; */
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-uneven);
@@ -71,7 +70,7 @@ body {
 
 .paragraph {
   font-family: var(--font-family-primary);
-    margin: 0;
+  margin: 0;
 }
 
 .l-footer {
@@ -159,7 +158,8 @@ body {
     width: 100%;
   }
 
-  /* Show c-nav when active (JS will toggle this) */
+  /* Show navigation when "active" (script.js will toggle this) */
+  /* I don't remember where I found this functionality - I didn't write it myself */
   .c-nav.active {
     display: flex;
     top: var(--push-l);
@@ -175,6 +175,7 @@ body {
   .c-nav.active {
     display: flex;
     top: var(--push-xl);
+    opacity: 0.9;
   }
 }
 
