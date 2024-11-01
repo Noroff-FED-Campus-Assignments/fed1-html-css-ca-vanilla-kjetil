@@ -1,6 +1,6 @@
 @import url("/css/styles.css");
 
-.form-section {
+.l-section-center {
   display: flex;
   color: var(--white);
   flex-wrap: wrap;
