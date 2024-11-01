@@ -12,7 +12,7 @@ This bootstrap template is intended to help you deliever a amazing website which
 - [Brief](https://noroff.sharepoint.com/:b:/s/FED1OSL24/EXvJ9TMGmU9Fsok1mQq1H08BKzQaheKEX5-p2e9czBsIdQ?e=TDbpCH)
 - [Design](https://www.figma.com/design/zNEnglEgyNj7SD33fOL30N/GameHub?node-id=0-1&t=xZBS3EwKn9Oqebgi-1)
 - [Production deploy](https://courageous-hamster-66684d.netlify.app/)
-- [Deployment CI](_LINK_TO_NETLIFY_VERCEL_DASHBOARD_)
+- [Deployment CI](https://app.netlify.com/sites/courageous-hamster-66684d/overview)
 
 ## Deployment
 
