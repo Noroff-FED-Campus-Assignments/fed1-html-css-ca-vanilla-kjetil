@@ -23,7 +23,7 @@ body {
 .l-gradient {
   background: radial-gradient(
     var(--dark-purple),
-    var(--medium-purple, var(--pink))
+    var(--light-purple, var(--blue))
   );
   height: 100%;
   background-size: 400% 400%;
