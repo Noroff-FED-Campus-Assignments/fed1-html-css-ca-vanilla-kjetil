@@ -112,6 +112,14 @@ body {
 .c-nav a:hover {
   color: var(--light-green);
 }
+
+/* Adding a background to the hamburger hover */
+@media (max-width: 768px) {
+  .c-nav a:hover {
+    background-color: var(--dark-purple);
+    opacity: 0.7;
+  }
+}
 .c-nav a::after {
   text-decoration: none;
 }
