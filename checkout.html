@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <title>Gamehub - Checkout</title>
+    <link rel="stylesheet" href="/css/checkout.css" />
+    <title>Game Page</title>
   </head>
   <body class="l-gradient">
     <header class="l-header">
@@ -22,6 +22,46 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <script src="js/script.js"></script>
+
+    <main class="main-container">
+      <section class="game-container">
+        <div class="game-image">
+          <img
+            src="media/call-of-duty-modern-warfare-2-cover.jpg"
+            alt="Game Cover"
+          />
+        </div>
+        <div class="game-description">
+          <h1 class="c-h1">Call of Duty: Modern Warfare II</h1>
+          <p>
+            Call of Duty: Modern Warfare II drops players into an unprecedented
+            global conflict that features the return of the iconic operators of
+            Task Force 141. Infinity Ward brings fans state-of-the-art gameplay,
+            with all-new gun handling, an advanced AI system, a new Gunsmith and
+            a suite of other gameplay and graphical innovations that elevate the
+            franchise to new heights.
+          </p>
+          <article class="game-details">
+            <ul>
+              <li>Campaign</li>
+              <li>Multiplayer</li>
+              <li>Special Ops</li>
+            </ul>
+
+            <div class="game-details">
+              <label for="platform">Choose a platform:</label>
+
+            <select name="platform" id="platform">
+              <option value="Empty"></option>
+              <option value="PC">PC</option>
+              <option value="Playstation">Playstation</option>
+              <option value="Xbox">Xbox</option>
+            </select>
+
+          </article>
+          <a href="checkout-success.html" class="buy-button">Buy now</a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
