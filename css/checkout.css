@@ -47,8 +47,6 @@
   }
 }
 
-@media (min-width: 768px) {
-}
 .game-description {
   display: flex;
   flex-direction: column;
@@ -58,11 +56,12 @@
   gap: var(--padding-md);
 }
 
+/* Pushing the points inside the container by using the same padding:left as the container */
 .game-description ul {
-  list-style-type: none;
-  padding: 0;
+  padding-left: var(--padding-md);
 }
 
+/* Create space between list items */
 .game-description ul li {
   padding-bottom: var(--padding-s);
 }
@@ -71,6 +70,15 @@
   display: flex;
   flex-direction: column;
   gap: var(--padding-s);
+}
+
+/* Making select and buy button smaller inside the context of .game-details, while inheriting default styles */
+.game-details select {
+  max-width: 50%;
+}
+
+.game-details ~ a.buy-button {
+  max-width: 50%;
 }
 
 @media (max-width: 1024px) {
