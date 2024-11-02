@@ -46,7 +46,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-uneven);
-  background-color: var(--dark-purple);
+  /* background-color: var(--dark-purple); */
+  background: transparent;
   font-weight: var(--font-weight-md);
   text-align: center;
 }
@@ -151,7 +152,8 @@ body {
   .c-nav {
     display: none;
     flex-direction: column;
-    background-color: var(--dark-purple);
+    /* background-color: var(--dark-purple); */
+    background: transparent;
     position: absolute;
     top: var(--push-l);
     right: 0;
