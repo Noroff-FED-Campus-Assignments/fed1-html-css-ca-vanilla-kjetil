@@ -38,6 +38,7 @@ input[type="submit"] {
   max-width: 200px;
   color: var(--black);
   font-size: var(--text-l);
+  padding: var(--padding-s);
 }
 .l-input-form {
   display: flex;

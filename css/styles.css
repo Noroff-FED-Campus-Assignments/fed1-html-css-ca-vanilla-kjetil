@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 /* Resets */
+
 *,
 *::after,
 *::before {
@@ -20,6 +21,7 @@ body {
 }
 
 /* Layout (l-) */
+
 .l-gradient {
   background: radial-gradient(
     var(--dark-purple),
@@ -46,7 +48,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-uneven);
-  /* background-color: var(--dark-purple); */
   background: transparent;
   font-weight: var(--font-weight-md);
   text-align: center;
@@ -80,25 +81,13 @@ body {
     padding-left: 0;
   }
 }
+
 .l-main {
   display: flex;
-  /* flex: 1 1 0; */
   flex-wrap: wrap;
   gap: var(--padding-s);
   justify-content: center;
   padding: var(--padding-l);
-  /* overflow-y: scroll; */
-}
-
-.paragraph {
-  font-family: var(--font-family-primary);
-  margin: 0;
-}
-
-.l-footer {
-  flex: 1 1 auto;
-  background: var(--light-purple);
-  padding-top: var(--padding-l);
 }
 
 /* Components (c-) */
@@ -242,7 +231,12 @@ body {
   }
 }
 
-/* Heading text */
+/* Text */
+
+.paragraph {
+  font-family: var(--font-family-primary);
+  margin: 0;
+}
 
 .c-h1 {
   font-family: var(--font-family-secondary);
@@ -250,10 +244,8 @@ body {
   font-size: var(--text-xl);
   width: 100%;
   line-height: var(--padding-l);
-  padding-left: var(
-    --padding-xs
-  ); /* Slightly to the left of the section below */
 }
+
 @media (max-width: 600px) {
   .c-h1 {
     font-size: var(--text-l);
@@ -269,6 +261,7 @@ body {
   line-height: var(--padding-l);
   padding-bottom: var(--padding-md);
 }
+
 @media (max-width: 600px) {
   .c-h2 {
     font-size: var(--text-md);
@@ -277,7 +270,7 @@ body {
 }
 
 /* Product cards */
-/* Container Styling */
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -287,7 +280,6 @@ body {
   padding: 1rem;
 }
 
-/* Product Card Styling */
 .product-card {
   display: flex;
   flex-direction: column;
@@ -295,12 +287,12 @@ body {
   max-width: 280px;
   height: auto;
   /* border: 1px solid var(--pink); */
-  border-radius: 8px;
+  border-radius: var(--border-radius-md);
   overflow: hidden;
   box-shadow: 0 8px 12px var(--black);
 }
 
-/* The clickable link */
+/* The clickable link on product cards */
 a.buy-button {
   text-decoration: none;
   font-size: var(--text-md);
@@ -320,7 +312,6 @@ a.buy-button {
 .product-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1.6rem;
   padding: 1rem;
   text-align: center;
@@ -328,14 +319,14 @@ a.buy-button {
 }
 
 .product-title {
-  font-size: 1.2rem;
+  font-size: var(--text-l);
   color: var(--white);
   font-weight: var(--font-weight-md);
 }
 
 .product-price {
-  font-size: 1rem;
-  color: #28a745;
+  font-size: var(--text-md);
+  color: var(--dark-green);
 }
 
 .buy-button {
@@ -345,13 +336,20 @@ a.buy-button {
   border: none;
   border-radius: var(--border-radius-s);
   cursor: pointer;
+  max-width: 400px;
 }
 
 .buy-button:hover {
   background-color: var(--light-green);
 }
+
+a.buy-button {
+  text-align: center;
+}
+
 a.buy-button:hover {
-  color: var(--light-purple);
+  text-decoration: underline;
+  text-decoration-color: var(--dark-green);
 }
 
 @media (max-width: 1024px) {
@@ -363,9 +361,6 @@ a.buy-button:hover {
 @media (max-width: 768px) {
   .product-card {
     flex: 1 1 calc(50% - 1rem); /* Two cards per row */
-  }
-  .buy-button {
-    padding: var(--padding-md); /* Increase button size on smaller screens */
   }
 }
 
