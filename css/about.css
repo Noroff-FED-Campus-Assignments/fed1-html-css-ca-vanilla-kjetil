@@ -1,43 +1,27 @@
 @import url("/css/styles.css");
 /* About page */
 
-.l-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: var(--padding-l);
-  padding-top: var(--padding-l);
-}
-
-@media (max-width: 600px) {
-  .l-section {
-    padding-left: 0;
-  }
-}
-
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
 }
 
-.about-item {
+.c-article {
   padding: var(--padding-l);
   text-align: center;
   flex: 1 1 45%;
 }
 
-.about-item p {
+.c-article p {
   margin: 0;
 }
-.about-item a {
+.c-article a {
   text-decoration: none;
   color: var(--dark-green);
 }
-.about-item img {
+.c-article img {
   max-width: 100%;
-  /* max-width: 360px; */
   height: auto;
 }
 
@@ -52,15 +36,14 @@
     justify-content: space-between;
   }
 
-  .about-item {
+  .c-article {
     flex: 1;
     padding: var(--padding-l);
     text-align: left;
   }
 
-  .about-item img {
-    flex: 1 1 45%; /* Ensures the image container maintains a reasonable size */
-    /* min-width: 360px;  */
+  .c-article img {
+    flex: 1 1 45%;
     max-width: 290px;
   }
 }
