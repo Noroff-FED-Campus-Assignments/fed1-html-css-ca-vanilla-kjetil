@@ -5,11 +5,13 @@
   --light-purple: #8f00ff;
   --medium-purple: #462a59;
   --dark-purple: #282445;
+  --dark-purple-transparent: rgba(40, 36, 69, 0.2);
   --light-green: #2fef80;
   --dark-green: #23ce6b;
 
   /* Secondary colors */
   --pink: #ff00b8;
+  --pink-transparent: rgba(255, 0, 184, 0.2);
 
   /* Text sizes */
   --text-s: 0.8rem;
