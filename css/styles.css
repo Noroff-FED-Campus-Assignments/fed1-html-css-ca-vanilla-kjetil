@@ -60,6 +60,61 @@ body {
   }
 }
 
+/* Hero section on landing page */
+
+.l-hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/media/hot-wheels-large.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Smaller image for smaller screens */
+@media (max-width: 1024px) {
+  .l-hero {
+    background-image: url(/media/hot-wheels-medium.jpg);
+  }
+}
+
+@media (max-width: 768px) {
+  .l-hero {
+    background-image: url(/media/hot-wheels-small.jpg);
+  }
+}
+
+@media (max-width: 600px) {
+  .l-hero {
+    background-image: url(/media/hot-wheels-extra-small.jpg);
+  }
+}
+
+.hero-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: var(--text-xl);
+  color: var(--white);
+  padding-bottom: var(--padding-md);
+}
+.hero-content .button {
+  font-size: var(--text-md);
+  color: var(--white);
+  cursor: pointer;
+  background-color: var(--dark-green);
+  border-radius: var(--border-radius-md);
+  padding: 15px 35px;
+  outline: none;
+  border: none;
+}
+
+
 .l-section-center {
   display: flex;
   color: var(--white);
