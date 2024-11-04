@@ -419,7 +419,6 @@ body {
 
 @media (max-width: 600px) {
   .c-h2 {
-    font-size: var(--text-md);
     text-align: center;
   }
 }
@@ -651,6 +650,7 @@ textarea {
   display: flex;
   max-width: 400px;
   width: 100%;
+  border-radius: var(--border-radius-md);
 }
 
 @media (max-width: 600px) {
