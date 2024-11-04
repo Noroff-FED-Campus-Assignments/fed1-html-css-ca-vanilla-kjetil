@@ -69,25 +69,40 @@ body {
   background-size: cover;
   background-position: center;
 }
-
-/* Adjusting the vh was the only way to make image scaling work properly -  */
+/* Adjusting the vh was the only way to make image scaling work properly without white space, clipping or repeats - I hope there's a smoother way of doing this */
 @media (max-width: 1024px) {
   .l-hero {
     height: 70vh;
     background-image: url(/media/hot-wheels-medium.jpg);
   }
 }
-
 @media (max-width: 768px) {
   .l-hero {
     height: 60vh;
     background-image: url(/media/hot-wheels-small.jpg);
   }
 }
-
 @media (max-width: 600px) {
   .l-hero {
     height: 50vh;
+    background-image: url(/media/hot-wheels-extra-small.jpg);
+  }
+}
+@media (max-width: 480px) {
+  .l-hero {
+    height: 45vh;
+    background-image: url(/media/hot-wheels-extra-small.jpg);
+  }
+}
+@media (max-width: 375px) {
+  .l-hero {
+    height: 40vh;
+    background-image: url(/media/hot-wheels-extra-small.jpg);
+  }
+}
+@media (max-width: 320px) {
+  .l-hero {
+    height: 35vh;
     background-image: url(/media/hot-wheels-extra-small.jpg);
   }
 }
