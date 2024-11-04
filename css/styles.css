@@ -313,7 +313,6 @@ body {
 
 .c-article img {
   max-width: 100%;
-  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -388,11 +387,6 @@ body {
 }
 
 /* Text */
-
-.paragraph {
-  font-family: var(--font-family-primary);
-  margin: 0;
-}
 
 .c-h1 {
   font-family: var(--font-family-secondary);
@@ -663,7 +657,6 @@ textarea {
   display: flex;
   flex-direction: column;
   flex: 0 1 50%;
-  max-width: 50%;
   padding: var(--padding-md);
   gap: var(--padding-md);
 }
@@ -697,5 +690,73 @@ textarea {
   .game-image,
   .game-description {
     max-width: 100%;
+  }
+}
+
+/* game-page 2 */
+
+.game-cover {
+  flex: 1 1 40%; /* Cover image takes up 40% of width */
+  max-width: 400px;
+}
+
+.game-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-info {
+  flex: 1 1 55%; /* Info section takes up the remaining space */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.game-info .c-h1 {
+  font-size: var(--text-xl);
+  color: var(--white);
+}
+
+.game-thumbnails {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.game-thumbnails img {
+  width: calc(33.33% - 1rem);
+  border-radius: var(--border-radius-s);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-thumbnails img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .game-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-cover,
+  .game-info {
+    max-width: 100%;
+  }
+
+  .game-thumbnails img {
+    width: 100%;
   }
 }
