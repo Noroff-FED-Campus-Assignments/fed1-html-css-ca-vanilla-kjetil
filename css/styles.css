@@ -139,53 +139,7 @@ body {
 .hero-content a {
   text-decoration: none;
 }
-
-.article-container {
-  width: 90%;
-  padding-top: var(--padding-md);
-  display: flex;
-  flex-direction: row;
-  gap: var(--padding-md);
-  font-size: var(--text-md);
-  text-align: center;
-}
-
-.transparent-background {
-  background: var(--dark-purple-transparent);
-}
-
-.article-item {
-  /* width: 100%; */
-  padding: var(--padding-s) 0;
-  border-radius: 5px;
-  transition: box-shadow 1s ease-in-out; /* slow transition for the hover effect */
-}
-.article-item:hover {
-  box-shadow: 0 0 5px 5px var(--pink-transparent); /* blurry glow effect */
-}
-.article-item h1 {
-  padding-bottom: var(--padding-s);
-  font-family: var(--font-family-primary);
-  font-size: var(--text-l);
-}
-
-.article-item img {
-  width: 100%;
-  object-fit: cover;
-}
-.article-item p {
-  padding: var(--padding-s);
-}
 @media (max-width: 768px) {
-  .article-container {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: var(--padding-s);
-  }
-  .article-item {
-    margin: 15px 0;
-  }
   .hero-content h1 {
     font-size: 35px;
   }
@@ -205,10 +159,16 @@ body {
 
 .l-section-split {
   display: flex;
-  padding-left: var(--padding-l);
-  padding-top: var(--padding-l);
-  padding-right: var(--padding-l);
+  padding: var(--padding-l);
 }
+
+@media (max-width: 600px) {
+  .l-section-split {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .l-success {
   display: flex;
   flex-direction: column;
@@ -217,24 +177,9 @@ body {
   gap: var(--padding-l);
   padding: var(--padding-l);
 }
-
 @media (max-width: 768px) {
   .l-success {
     padding: var(--padding-s);
-  }
-}
-
-@media (min-width: 768px) {
-  .l-section-split {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 600px) {
-  .l-section-split {
-    flex-direction: column;
-    align-items: center;
   }
 }
 
@@ -246,136 +191,114 @@ body {
   padding: var(--padding-l);
 }
 
+.article-container {
+  width: 90%;
+  padding-top: var(--padding-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--padding-md);
+  font-size: var(--text-md);
+  text-align: center;
+}
+
+.transparent-background {
+  background: var(--dark-purple-transparent);
+}
+
+.article-item {
+  padding: var(--padding-s) 0;
+  border-radius: var(--border-radius-s);
+  transition: box-shadow 1s ease-in-out; /* slow transition for the hover effect */
+}
+.article-item:hover {
+  box-shadow: 0 0 5px 5px var(--pink-transparent); /* blurry glow effect */
+}
+.article-item h1 {
+  padding-bottom: var(--padding-s);
+  font-family: var(--font-family-primary);
+  font-size: var(--text-l);
+}
+.article-item img {
+  width: 100%;
+  object-fit: cover;
+}
+.article-item p {
+  padding: var(--padding-s);
+}
+@media (max-width: 768px) {
+  .article-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--padding-s);
+  }
+  .article-item {
+    margin: 15px 0;
+  }
+}
+
 /* Components (c-) */
 
 .c-logo {
   display: flex;
   align-items: center;
-  font-family: Inter;
-  font-size: 48px;
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-xl);
 }
 .c-logo a {
   color: var(--white);
   text-decoration: none;
 }
-
 .c-logo a:hover {
   color: var(--light-green);
 }
 
 .c-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: var(--padding-md);
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-l);
 }
-
-.c-nav a {
-  color: var(--dark-green);
-  text-decoration: none;
-  margin: 0 1rem;
-}
-.c-nav a:hover {
-  color: var(--light-green);
-}
-
-/* Adding a background to the hamburger hover */
 @media (max-width: 768px) {
-  .c-nav a:hover {
-    background-color: var(--dark-purple);
-    opacity: 0.7;
-  }
-}
-.c-nav a::after {
-  text-decoration: none;
-}
-
-@media (max-width: 600px) {
-  .c-nav {
-    flex-direction: column;
-  }
-}
-
-.c-article {
-  padding: var(--padding-l);
-  text-align: center;
-  flex: 1 1 45%;
-}
-
-.c-article p {
-  margin: 0;
-}
-
-.c-article a {
-  text-decoration: none;
-  color: var(--dark-green);
-}
-
-.c-article img {
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-  .c-article {
-    flex: 1;
-    padding: var(--padding-l);
-    text-align: left;
-  }
-  .c-article img {
-    flex: 1 1 45%;
-    max-width: 290px;
-  }
-}
-
-/* Hamburger menu */
-
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-/* Hamburger icon */
-.hamburger span {
-  width: 30px;
-  height: 3px;
-  background-color: var(--dark-green);
-  margin: 5px 0;
-  /* transition: 0.3s; */
-}
-.hamburger span:hover {
-  background-color: var(--light-green);
-}
-
-@media (max-width: 768px) {
-  /* Show the hamburger menu */
-  .hamburger {
-    display: flex;
-  }
-
-  /* Hide the c-navigation links by default */
+  /* Hide the links by default */
   .c-nav {
     display: none;
     flex-direction: column;
-    /* background-color: var(--dark-purple); */
     background: transparent;
     position: absolute;
     top: var(--push-l);
     right: 0;
     width: 100%;
   }
-
-  /* Show navigation when "active" (script.js will toggle this) */
-  /* I don't remember where I found this functionality - I didn't write it myself */
+}
+.c-nav a {
+  color: var(--dark-green);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+@media (max-width: 768px) {
+  .c-nav a {
+    display: block;
+    padding: var(--padding-md);
+    text-align: center;
+  }
+}
+.c-nav a:hover {
+  color: var(--light-green);
+}
+/* Adding a transparent background to the hamburger hover to make it more visible, but still see-through */
+@media (max-width: 768px) {
+  .c-nav a:hover {
+    background-color: var(--dark-purple);
+    opacity: 0.7;
+  }
+}
+/* Show navigation when "active" (script.js will toggle this) */
+/* I don't remember where I found this functionality - I didn't write it myself */
+@media (max-width: 768px) {
   .c-nav.active {
     display: flex;
     top: var(--push-l);
-  }
-
-  .c-nav a {
-    display: block;
-    padding: 1rem;
-    text-align: center;
   }
 }
 @media (max-width: 600px) {
@@ -383,6 +306,64 @@ body {
     display: flex;
     top: var(--push-xl);
     opacity: 0.9;
+  }
+}
+.c-nav a::after {
+  text-decoration: none;
+}
+
+/* Hamburger menu */
+
+/* Hide on wide screens */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  /* Show the menu */
+  .hamburger {
+    display: flex;
+  }
+}
+/* Hamburger icon */
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: var(--dark-green);
+  margin: 5px 0;
+}
+.hamburger span:hover {
+  background-color: var(--light-green);
+}
+
+.c-article {
+  padding: var(--padding-l);
+  text-align: center;
+  flex: 1 1 45%;
+}
+@media (max-width: 600px) {
+  .c-article {
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .c-article {
+    flex: 1;
+    padding: var(--padding-l);
+  }
+}
+.c-article a {
+  text-decoration: none;
+  color: var(--dark-green);
+}
+.c-article img {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .c-article img {
+    flex: 1 1 45%;
+    max-width: 290px;
   }
 }
 
@@ -395,7 +376,6 @@ body {
   width: 100%;
   line-height: var(--padding-l);
 }
-
 @media (max-width: 768px) {
   .c-h1 {
     text-align: center;
@@ -410,7 +390,6 @@ body {
   line-height: var(--padding-l);
   padding-bottom: var(--padding-md);
 }
-
 @media (max-width: 600px) {
   .c-h2 {
     text-align: center;
@@ -422,46 +401,84 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: var(--padding-md);
   justify-content: center;
   max-width: 1200px;
-  padding: 1rem;
+  padding: var(--padding-md);
 }
 
 .product-card {
   display: flex;
   flex-direction: column;
-  flex: 1 1 calc(25% - 1rem); /* Four cards per row with gap */
+  flex: 1 1 calc(25% - 1rem); /* Four cards per row with gap - I did not write this css myself */
   max-width: 280px;
   height: auto;
-  /* border: 1px solid var(--pink); */
   border-radius: var(--border-radius-md);
   overflow: hidden;
   box-shadow: 0 8px 12px var(--black);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .product-card {
+    flex: 1 1 calc(33.33% - 1rem); /* Three cards per row */
+  }
+}
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 calc(50% - 1rem); /* Two cards per row */
+  }
+}
+@media (max-width: 480px) {
+  .product-card {
+    flex: 1 1 100%; /* One card per row */
+  }
 }
 
+/* Hover Effect */
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.buy-button {
+  padding: var(--padding-s);
+  background-color: var(--dark-green);
+  color: var(--black);
+  border: none;
+  border-radius: var(--border-radius-s);
+  cursor: pointer;
+  max-width: 400px;
+}
+.buy-button:hover {
+  background-color: var(--light-green);
+}
 /* The clickable link on product cards */
 a.buy-button {
   text-decoration: none;
   font-size: var(--text-md);
+  text-align: center;
+}
+a.buy-button:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--dark-green);
 }
 
 .product-image {
   flex: 1;
   width: 100%;
+  transition: transform 0.3s ease;
 }
-
 .product-image img {
   width: 100%;
-  height: auto;
   object-fit: cover;
 }
 
 .product-info {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
-  padding: 1rem;
+  gap: var(--padding-md);
+  padding: var(--padding-md);
   text-align: center;
   background-color: var(--dark-purple);
 }
@@ -477,76 +494,15 @@ a.buy-button {
   color: var(--dark-green);
 }
 
-.buy-button {
-  padding: var(--padding-s);
-  background-color: var(--dark-green);
-  color: var(--black);
-  border: none;
-  border-radius: var(--border-radius-s);
-  cursor: pointer;
-  max-width: 400px;
-}
-
-.buy-button:hover {
-  background-color: var(--light-green);
-}
-
-a.buy-button {
-  text-align: center;
-}
-
-a.buy-button:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--dark-green);
-}
-
-@media (max-width: 1024px) {
-  .product-card {
-    flex: 1 1 calc(33.33% - 1rem); /* Three cards per row */
-  }
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    flex: 1 1 calc(50% - 1rem); /* Two cards per row */
-  }
-}
-
-@media (max-width: 480px) {
-  .product-card {
-    flex: 1 1 100%; /* One card per row */
-  }
-}
-
-/* Hover Effect */
-.product-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Scale Image on Hover */
-.product-image {
-  transition: transform 0.3s ease;
-}
-
 .product-card:hover .product-image {
   transform: scale(1.05);
-}
-
-/* Button Highlight on Hover */
-.buy-button {
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .product-card:hover .buy-button {
   background-color: var(--light-green);
 }
 
-/* Contact */
+/* Contact form */
 
 .form {
   display: flex;
@@ -587,7 +543,7 @@ fieldset {
 
 label,
 textarea {
-  font-size: 0.8rem;
+  font-size: var(--text-s);
   letter-spacing: 1px;
 }
 
@@ -606,15 +562,14 @@ textarea {
 /* Checkout and game-page related styles */
 
 .main-container {
-  padding: 2rem 4rem;
+  padding: var(--padding-uneven);
 }
 
 .game-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: var(--padding-l);
 }
-
 @media (max-width: 928px) {
   .game-container {
     flex-direction: column;
@@ -623,19 +578,28 @@ textarea {
 }
 @media (max-width: 600px) {
   .game-container {
-    padding: 1rem;
+    padding: var(--padding-md);
   }
 }
 
 .game-image {
   flex: 1 1 50%;
   max-width: 50%;
-  padding: 1rem;
+  padding: var(--padding-md);
 }
-
+@media (max-width: 600px) {
+  .game-image {
+    flex-shrink: 1;
+  }
+}
 @media (max-width: 928px) {
   .game-image {
     flex: 0 1 auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .game-image {
     max-width: 100%;
   }
 }
@@ -647,12 +611,6 @@ textarea {
   border-radius: var(--border-radius-md);
 }
 
-@media (max-width: 600px) {
-  .game-image {
-    flex-shrink: 1;
-  }
-}
-
 .game-description {
   display: flex;
   flex-direction: column;
@@ -660,13 +618,17 @@ textarea {
   padding: var(--padding-md);
   gap: var(--padding-md);
 }
-
+@media (max-width: 1024px) {
+  .game-description {
+    max-width: 100%;
+  }
+}
 /* Pushing the points inside the container by using the same padding:left as the container */
 .game-description ul {
   padding-left: var(--padding-md);
 }
 
-/* Create space between list items */
+/* Space between list items */
 .game-description ul li {
   padding-bottom: var(--padding-s);
 }
@@ -686,34 +648,35 @@ textarea {
   max-width: 50%;
 }
 
-@media (max-width: 1024px) {
-  .game-image,
-  .game-description {
-    max-width: 100%;
-  }
-}
-
-/* game-page 2 */
-
 .game-cover {
   flex: 1 1 40%; /* Cover image takes up 40% of width */
   max-width: 400px;
 }
+@media (max-width: 768px) {
+  .game-cover {
+    max-width: 100%;
+  }
+}
 
 .game-cover img {
   width: 100%;
+  /* TODO trenger jeg auto? */
   height: auto;
   border-radius: var(--border-radius-md);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .game-info {
-  flex: 1 1 55%; /* Info section takes up the remaining space */
+  flex: 1 1 55%; /* Info section takes up the remaining space - I did not write this myself, it's copied from somewhere */
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--padding-md);
 }
-
+@media (max-width: 768px) {
+  .game-info {
+    max-width: 100%;
+  }
+}
 .game-info .c-h1 {
   font-size: var(--text-xl);
   color: var(--white);
@@ -721,15 +684,21 @@ textarea {
 
 .game-thumbnails {
   display: flex;
-  gap: 1rem;
+  gap: var(--padding-md);
   flex-wrap: wrap;
 }
 
+/* This is copied code - I didn't write this */
 .game-thumbnails img {
   width: calc(33.33% - 1rem);
   border-radius: var(--border-radius-s);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (max-width: 768px) {
+  .game-thumbnails img {
+    width: 100%;
+  }
 }
 
 .game-thumbnails img:hover {
@@ -740,23 +709,13 @@ textarea {
 .game-page {
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
-  gap: 2rem;
+  padding: var(--padding-l);
+  gap: var(--padding-l);
   max-width: 1200px;
 }
-
 @media (max-width: 768px) {
   .game-page {
     flex-direction: column;
     align-items: center;
-  }
-
-  .game-cover,
-  .game-info {
-    max-width: 100%;
-  }
-
-  .game-thumbnails img {
-    width: 100%;
   }
 }
