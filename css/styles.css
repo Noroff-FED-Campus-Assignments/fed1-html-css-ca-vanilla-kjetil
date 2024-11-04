@@ -70,21 +70,24 @@ body {
   background-position: center;
 }
 
-/* Smaller image for smaller screens */
+/* Adjusting the vh was the only way to make image scaling work properly -  */
 @media (max-width: 1024px) {
   .l-hero {
+    height: 70vh;
     background-image: url(/media/hot-wheels-medium.jpg);
   }
 }
 
 @media (max-width: 768px) {
   .l-hero {
+    height: 60vh;
     background-image: url(/media/hot-wheels-small.jpg);
   }
 }
 
 @media (max-width: 600px) {
   .l-hero {
+    height: 50vh;
     background-image: url(/media/hot-wheels-extra-small.jpg);
   }
 }
