@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore a specific game. Discover detailed information that will aid your decision."
+      content="Explore the game page at Gamehub. Discover detailed information about your favorite games, including features, reviews, and more."
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" href="/css/game-page.css" /> -->
+    <link rel="stylesheet" href="/css/checkout.css" />
     <title>Gamehub - Game Page</title>
   </head>
   <body class="l-gradient">
@@ -26,6 +27,45 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <script src="js/script.js"></script>
+
+    <main class="main-container">
+      <section class="game-page-container">
+        <h1 class="c-h1">Game Title</h1>
+        <div class="game-image">
+          <img
+            src="media/call-of-duty-modern-warfare-2-cover.jpg"
+            alt="Game Cover"
+          />
+        </div>
+        <p>
+          Call of Duty: Modern Warfare II drops players into an unprecedented
+          global conflict that features the return of the iconic operators of
+          Task Force 141. Infinity Ward brings fans state-of-the-art gameplay,
+          with all-new gun handling, an advanced AI system, a new Gunsmith and a
+          suite of other gameplay and graphical innovations that elevate the
+          franchise to new heights.
+        </p>
+      </section>
+      <section class="game-page-container">
+        <div class="game-description">
+          <div class="game-images">
+            <img src="media/new-vegas-wide.jpg" alt="Game Screenshot 1" />
+            <img src="media/it-takes-two-wide.jpg" alt="Game Screenshot 2" />
+            <img
+              src="media/street-fighter-6-wide.jpg"
+              alt="Game Screenshot 3"
+            />
+          </div>
+          <article class="game-details">
+            <ul>
+              <li>Feature 1</li>
+              <li>Feature 2</li>
+              <li>Feature 3</li>
+            </ul>
+            <a href="checkout.html" class="buy-button">Add to Cart</a>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

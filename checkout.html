@@ -9,18 +9,18 @@
   </head>
   <body class="l-gradient">
     <header class="l-header">
-      <div class="c-logo"><a href="index.html">Gamehub</a></div>
+      <div class="c-logo"><a href="index.html" aria-label="Gamehub Home">Gamehub</a></div>
       <!-- Hamburger menu -->
-      <div class="hamburger" id="hamburger">
+      <div class="hamburger" id="hamburger" aria-label="Menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <nav class="c-nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="games.html">Games</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <nav class="c-nav" id="nav" aria-label="Main Navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="games.html" aria-label="Games">Games</a>
+        <a href="about.html" aria-label="About">About</a>
+        <a href="contact.html" aria-label="Contact">Contact</a>
       </nav>
     </header>
 
@@ -52,7 +52,7 @@
             <div class="game-details">
               <label for="platform">Choose platform:</label>
 
-            <select name="platform" id="platform">
+            <select name="platform" id="platform" aria-required="true">
               <option value="Empty"></option>
               <option value="PC">PC</option>
               <option value="Playstation">Playstation</option>
@@ -60,7 +60,7 @@
             </select>
 
           </article>
-          <a href="checkout-success.html" class="buy-button">Buy now</a>
+          <a href="checkout-success.html" class="buy-button" aria-label="Buy now">Buy now</a>
         </div>
       </section>
     </main>
