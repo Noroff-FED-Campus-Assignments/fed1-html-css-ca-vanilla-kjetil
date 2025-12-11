@@ -143,9 +143,6 @@ body {
   .hero-content h1 {
     font-size: 35px;
   }
-  .hero p {
-    font-size: 18px;
-  }
 }
 
 .l-section-center {
@@ -181,14 +178,6 @@ body {
   .l-success {
     padding: var(--padding-s);
   }
-}
-
-.l-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--padding-s);
-  justify-content: center;
-  padding: var(--padding-l);
 }
 
 .article-container {
