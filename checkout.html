@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Complete your purchase or continue browsing. Here you can finalize your order and enjoy your new game.">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Gamehub - Checkout</title>
+  </head>
+  <body class="l-gradient">
+    <header class="l-header">
+      <div class="c-logo"><a href="index.html" aria-label="Gamehub Home">Gamehub</a></div>
+      <!-- Hamburger menu -->
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="c-nav" id="nav" aria-label="Main Navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="games.html" aria-label="Games">Games</a>
+        <a href="about.html" aria-label="About">About</a>
+        <a href="contact.html" aria-label="Contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="game-container">
+        <article class="game-image">
+          <img
+            src="media/call-of-duty-modern-warfare-2-cover.jpg"
+            alt="Game Cover"
+          />
+        </article>
+        <article class="game-description">
+          <h1 class="c-h1">Call of Duty: Modern Warfare II</h1>
+          <p>
+            Call of Duty: Modern Warfare II drops players into an unprecedented
+            global conflict that features the return of the iconic operators of
+            Task Force 141. Infinity Ward brings fans state-of-the-art gameplay,
+            with all-new gun handling, an advanced AI system, a new Gunsmith and
+            a suite of other gameplay and graphical innovations that elevate the
+            franchise to new heights.
+          </p>
+          <article class="game-details">
+            <ul>
+              <li>Campaign</li>
+              <li>Multiplayer</li>
+              <li>Special Ops</li>
+            </ul>
+
+            <article class="game-details">
+              <label for="platform">Choose platform:</label>
+
+            <select name="platform" id="platform" aria-required="true">
+              <option value="Empty"></option>
+              <option value="PC">PC</option>
+              <option value="Playstation">Playstation</option>
+              <option value="Xbox">Xbox</option>
+            </select>
+
+          </article>
+          <a href="checkout-success.html" class="buy-button" aria-label="Buy now">Buy now</a>
+        </article>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

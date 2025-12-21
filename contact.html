@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in touch with Gamehub. Contact us for questions, feedback and even your complaints - we welcome everything.">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <title>Gamehub - Contact</title>
+  </head>
+  <body class="l-gradient">
+    <header class="l-header">
+      <div class="c-logo"><a href="index.html" aria-label="Gamehub Home">Gamehub</a></div>
+      <!-- Hamburger menu -->
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="c-nav" id="nav" aria-label="Main Navigation">
+        <a href="index.html" aria-label="Home">Home</a>
+        <a href="games.html" aria-label="Games">Games</a>
+        <a href="about.html" aria-label="About">About</a>
+        <a href="contact.html" aria-label="Contact">Contact</a>
+      </nav>
+    </header>
+    <main class="l-section-center">
+
+      <!-- form action and method is removed - submit button leads back to the same page -->
+      <form class="form" aria-label="Contact Form">
+        <h1 class="c-h1">Contact</h1>
+
+        <div class="l-input-form">
+          <label for="firstName">Name</label>
+          <input type="text" name="firstname" id="firstName" placeholder="e.g. John" aria-required="true" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="example@mail.com" required aria-required="true" />
+
+          <label for="topic"
+            >Give us a hint of what the message is about:</label
+          >
+
+          <select name="topic" id="topic" aria-required="true">
+            <option value="Empty"></option>
+            <option value="Price">Why are your prices so low?</option>
+            <option value="Problem">I have a problem</option>
+            <option value="Question">I have a question</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="33"
+            placeholder="Write your message here.." aria-required="true"
+          ></textarea>
+
+        <div>
+          <input type="checkbox" name="terms" id="terms" value="agree" required aria-required="true">
+          <span></span>
+          <label for="terms">I want to send this form</label>
+        </div>
+
+        <input type="submit" ref="contact.html" value="Submit" aria-label="Submit Form" />
+      </form>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
